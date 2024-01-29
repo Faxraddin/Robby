@@ -1,4 +1,5 @@
-import './RightPart.css'
+import './RightPart.css';
+import React from 'react';
 
 const RightPart = () => {
   return (

@@ -5,9 +5,12 @@ import RightPart from "./components/RightPart/RightPart";
 const App = () => {
   return (
     <div className="app">
-      <DocumentUpload />
-      <Form />
-      <RightPart/>
+      <div className="app-container">
+        <div className="app-p1">
+          <DocumentUpload />
+          <Form />
+        </div>
+      </div>
     </div>
   );
 };
