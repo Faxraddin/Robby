@@ -22,7 +22,7 @@ const RightPart = () => {
           <h3>Location checking:</h3>
           <span>All Available!</span>
         </div>
-        <div className="RightPart-p3" style={{ padding: "15px 0 15px 0" }}>
+        <div className="RightPart-p3" style={{ padding: "20px 0 0px 0" }}>
           <span>Client:</span>
           <div className="swichers2">
             <div>
@@ -36,7 +36,7 @@ const RightPart = () => {
           </div>
           <div
             className="testers"
-            style={{ gap: "15px", display: "flex", flexDirection: "column" }}
+            style={{ gap: "25px", display: "flex", flexDirection: "column" }}
           >
             <div
               style={{
