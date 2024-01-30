@@ -1,4 +1,5 @@
 import "./RightPart.css";
+import Select from "./Select";
 
 const RightPart = () => {
   return (
@@ -55,20 +56,8 @@ const RightPart = () => {
                   gap: 10,
                 }}
               >
-                <div
-                  style={{
-                    padding: "10px",
-                    border: "rgb(19, 68, 97) thin solid",
-                    borderRadius: 10,
-                    display: "flex",
-                    gap: 10,
-                    alignItems: "center",
-                  }}
-                >
-                  <span style={{ color: "rgb(19, 68, 97)" }}>
-                    Select Client
-                  </span>
-                  <img height={13} width={13} src="./down.png" />
+                <div style={{width: 140}}>
+                  <Select placeholder='Select Client' fields={["Sasnarine", "Bailey"]} />
                 </div>
                 <img height={25} width={25} src="./clock.png" />
               </div>
@@ -91,20 +80,8 @@ const RightPart = () => {
                   gap: 10,
                 }}
               >
-                <div
-                  style={{
-                    padding: "10px",
-                    border: "rgb(19, 68, 97) thin solid",
-                    borderRadius: 10,
-                    display: "flex",
-                    gap: 10,
-                    alignItems: "center",
-                  }}
-                >
-                  <span style={{ color: "rgb(19, 68, 97)" }}>
-                    Select Client
-                  </span>
-                  <img height={13} width={13} src="./down.png" />
+                <div style={{width: 140}}>
+                  <Select placeholder='Select Client' fields={["Sasnarine", "Bailey"]} />
                 </div>
                 <img height={25} width={25} src="./clock.png" />
               </div>
@@ -127,20 +104,8 @@ const RightPart = () => {
                   gap: 10,
                 }}
               >
-                <div
-                  style={{
-                    padding: "10px",
-                    border: "rgb(19, 68, 97) thin solid",
-                    borderRadius: 10,
-                    display: "flex",
-                    gap: 10,
-                    alignItems: "center",
-                  }}
-                >
-                  <span style={{ color: "rgb(19, 68, 97)" }}>
-                    Select Client
-                  </span>
-                  <img height={13} width={13} src="./down.png" />
+                <div style={{width: 140}}>
+                  <Select placeholder='Select Client' fields={["Sasnarine", "Bailey"]} />
                 </div>
                 <img height={25} width={25} src="./clock.png" />
               </div>
@@ -163,20 +128,8 @@ const RightPart = () => {
                   gap: 10,
                 }}
               >
-                <div
-                  style={{
-                    padding: "10px",
-                    border: "rgb(19, 68, 97) thin solid",
-                    borderRadius: 10,
-                    display: "flex",
-                    gap: 10,
-                    alignItems: "center",
-                  }}
-                >
-                  <span style={{ color: "rgb(19, 68, 97)" }}>
-                    Select Client
-                  </span>
-                  <img height={13} width={13} src="./down.png" />
+                <div style={{width: 140}}>
+                  <Select placeholder='Select Client' fields={["Sasnarine", "Bailey"]} />
                 </div>
                 <img height={25} width={25} src="./clock.png" />
               </div>
