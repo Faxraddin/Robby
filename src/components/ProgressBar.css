@@ -1,0 +1,138 @@
+.progressBarContainer {
+    height: 20px;
+    width: 100%;
+    background-color: #e0e0de;
+    border-radius: 50px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.progressBarIcon {
+    margin-left: -40px;
+    color: #FFA500;
+    font-size: 30px;
+    transform: translateY(-14px);
+}
+
+.progressBarContainer {
+    height: 5px;
+    width: 85%;
+    background-color: #e0e0de;
+    border-radius: 50px;
+    margin: 50px 50px 50px 60px;
+    display: flex;
+    align-items: center;
+}
+
+.progressBarLabel {
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.progressBarText {
+    margin-left: 25px;
+    color: #e0e0de;
+    font-size: 18px;
+    transform: translateY(-18px);
+}
+
+.progressBarNumbers {
+    margin-left: auto;
+    margin-right: -62px;
+    color: rgb(122, 133, 140);
+    font-size: 18px;
+    transform: translateY(-18px);
+}
+
+.progress_bar_underline {
+    width: 100%;
+    border: none;
+    border-top: #e0e0de 1px solid;
+    position: relative;
+    bottom: 28px;
+}
+
+@media (max-width: 768px) {
+    .progress_bar_underline {
+        left: 16px;
+        width: 106%;
+    }
+
+    .progressBarIcon {
+        margin-left: -30px;
+        font-size: 33px;
+        transform: translateY(-10px);
+    }
+}
+
+.progress_bar2_underline {
+    width: 80%;
+    border: none;
+    border-top: #e0e0de 2px solid;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .progressBarIcon {
+        margin-left: -30px;
+        font-size: 33px;
+        transform: translateY(-10px);
+    }
+
+    .progressBarText {
+        font-size: 14px;
+        margin-left: 20px;
+        transform: translateY(-14px);
+    }
+
+    .progressBarNumbers {
+        font-size: 14px;
+        margin-right: -20px;
+        margin-top: -7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .progressBarIcon {
+        margin-left: -20px;
+        font-size: 20px;
+    }
+
+    .progressBarText {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .progressBarNumbers {
+        font-size: 12px;
+        margin-right: -40px;
+    }
+}
+
+.elapsed_text {
+    color: rgb(19, 68, 97);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.elapsed_dates {
+    display: flex;
+    margin-top: 12px;
+    color: rgb(3, 149, 3);
+}
+
+.progress_bar3_underline {
+    width: 80%;
+    border: none;
+    border-top: #e0e0de 2px solid;
+    position: relative;
+    margin-top: 16px;
+}
+
+.tolerance_window {
+    margin-top: 14px;
+    color: rgb(19, 68, 97);
+    font-weight: bold;
+}

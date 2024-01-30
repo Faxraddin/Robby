@@ -9,21 +9,23 @@
     padding: 20px;
     width: 870px;
     border-radius: 10px;
-    border: 2px dashed #555;
-    color: #444;
+    border: rgba(19, 68, 97, 0.6) 1px solid;
     cursor: pointer;
     transition: background .2s ease-in-out, border .2s ease-in-out;
+    width: 93%;
 }
 
-.drop-container:hover,
-.drop-container.drag-active {
-    background: #eee;
-    border-color: #111;
-}
-
-.drop-container:hover .drop-title,
-.drop-container.drag-active .drop-title {
-    color: #222;
+.inner-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgba(19, 68, 97, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    height: 200px;
+    box-sizing: border-box;
 }
 
 .drop-title {
@@ -35,8 +37,8 @@
 }
 
 input[type=file] {
-    width: 350px;
-    max-width: 100%;
+    width: 50%;
+    max-width: 200px;
     color: #444;
     padding: 5px;
     background: #fff;
@@ -52,7 +54,7 @@ input[type=file] {
 }
 
 .upload_button {
-    width: 100%;
+    width: 30%;
     padding: 10px;
     background: rgb(19, 68, 97);
     color: white;
@@ -62,6 +64,96 @@ input[type=file] {
     transition: background .2s ease-in-out;
 }
 
-.drop-title {
-    color: rgb(19, 68, 97);
+.underline {
+    border-top: rgba(19, 68, 97, 0.6) 1px solid;
+    margin-top: 18px;
+}
+
+@media (max-width: 1024px) {
+    .drop-container {
+        width: auto;
+        padding: 15px;
+    }
+
+    .inner-border {
+        width: auto;
+        padding: 15px;
+    }
+
+    input[type=file] {
+        width: auto;
+    }
+
+    .drop-title {
+        font-size: 18px;
+
+    }
+
+    .upload_button {
+        width: 40%;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .drop-container {
+        width: auto;
+
+        padding: 10px;
+    }
+
+    .inner-border {
+        width: auto;
+
+        padding: 10px;
+    }
+
+    input[type=file] {
+        width: auto;
+
+    }
+
+    .upload_button {
+        width: 50%;
+
+    }
+
+    .drop-title {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .drop-container {
+        width: auto;
+
+        padding: 5px;
+    }
+
+    .inner-border {
+        width: auto;
+
+        padding: 5px;
+    }
+
+    input[type=file] {
+        width: auto;
+
+    }
+
+    .document_icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .upload_button {
+        width: 70%;
+
+    }
+
+    .drop-title {
+        font-size: 14px;
+
+    }
 }

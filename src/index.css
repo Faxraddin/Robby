@@ -7,8 +7,10 @@
 .app {
   padding: 40px;
   position: relative;
-};
+}
 
-.app-container{
+;
+
+.app-container {
   display: flex;
 }
