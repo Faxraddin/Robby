@@ -7,7 +7,7 @@ import Switch from "./Switch";
 const ProgressBar = ({ completed, text, numbers }) => {
   return (
     <>
-      <div className="progressBarContainer">
+      {text && <div className="progressBarContainer">
         <FontAwesomeIcon icon={faFile} className="progressBarIcon" />
         <span className="progressBarText">{text}</span>
         <span className="progressBarNumbers">{numbers}</span>
@@ -16,7 +16,7 @@ const ProgressBar = ({ completed, text, numbers }) => {
           className="progressBarFiller"
           style={{ width: `${completed}%` }}
         ></div>
-      </div>
+      </div>}
       <hr className="progress_bar_underline" />
       <hr className="progress_bar2_underline" />
       <p className="elapsed_text">
