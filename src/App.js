@@ -1,11 +1,13 @@
 import DocumentUpload from "./components/DocumentUpload";
 import Form from "./components/Form";
+import Buttons from "./components/Buttons/Buttons";
 
 const App = () => {
   return (
     <div className="app">
       <DocumentUpload />
       <Form />
+      <Buttons/>
     </div>
   );
 };
