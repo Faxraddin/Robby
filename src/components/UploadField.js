@@ -15,14 +15,33 @@ const UploadField = () => {
     const file = e.target.files[0];
     setFileName(file.name);
     let fileSizeInMB = (file.size / (1024 * 1024)).toFixed(2);
-    if(fileSizeInMB == 0.00) {
+    if (fileSizeInMB == 0.00) {
+      fileSizeInMB = 0.01;
+    }
+    setFileSize(fileSizeInMB);
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    const file = e.dataTransfer.files[0];
+    setFileName(file.name);
+    let fileSizeInMB = (file.size / (1024 * 1024)).toFixed(2);
+    if (fileSizeInMB == 0.00) {
       fileSizeInMB = 0.01;
     }
     setFileSize(fileSizeInMB);
   };
 
   return (
-    <div className="outer-div">
+    <div
+      className="outer-div"
+      onDragOver={handleDragOver}
+      onDrop={handleDrop}
+    >
       <label htmlFor="images" className="drop-container">
         <div className="inner-border">
           <img
@@ -34,17 +53,20 @@ const UploadField = () => {
             Drag & Drop Here or <strong>Browse</strong>
           </span>
         </div>
-        <input type="file" id="fileUpload" hidden onChange={handleFileChange} />
+        <input
+          type="file"
+          id="fileUpload"
+          hidden
+          onChange={handleFileChange}
+        />
         <button className="upload_button" onClick={handleImageUpload}>
           Upload Manifest
         </button>
       </label>
       <hr className="underline" />
-      {fileName && <ProgressBar
-        completed={10}
-        text={fileName}
-        numbers={`${fileSize} MB`}
-      />}
+      {fileName && (
+        <ProgressBar completed={10} text={fileName} numbers={`${fileSize} MB`} />
+      )}
     </div>
   );
 };
